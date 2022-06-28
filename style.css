@@ -1,0 +1,582 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0; 
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(to bottom, #c8c8c8, #d6d6d6, #e3e3e3, #f1f1f1, #ffffff);
+    padding: 0.6em;
+    padding-bottom: 2em !important;
+}
+
+.container
+{
+    width: 75%;
+    max-width: 992px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    box-shadow: 0.1em 0.1em 0.5em;
+}
+
+/************************* HEADER LEFT *********************/
+
+.header_top
+{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.header_top a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header_logo_title
+{
+    display: flex;
+    max-width: 40%;
+    padding-top: 0.15em;
+}
+
+.logo
+{
+    margin: 0.2em 0.6em 0.6em 0.6em;
+}
+
+.title h1
+{
+    font-size: 2.2em;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 0.2em;
+}
+
+.title p
+{
+    color: rgb(245, 131, 227);
+    font-style: italic;
+    font-size: 0.7em;
+    margin: 0.2em 1.5em;
+}
+
+/************************* HEADER CENTER *********************/
+
+.header_help_tel
+{
+    max-width: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.15em;
+}
+
+.header_help_tel h2
+{
+    color: rgb(63, 200, 250);
+    font-size: 1.3em;
+}
+
+.tel
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/aide.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 80%;
+    padding: 0.1em 0 0.1em 1.4em;
+}
+
+.tel_number
+{
+    color: rgb(63, 200, 250);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.header_help_tel p
+{
+    color: rgb(200, 200, 200);
+    font-style: italic;
+    font-size: 0.7em;
+    padding-top: 0.2em;
+}
+
+/************************* HEADER RIGHT *********************/
+
+.header_account_basket
+{
+    max-width: 30%;
+    color: white;
+    text-align: center;
+    background-color: rgb(63, 200, 250);
+    padding: 0.15em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.account
+{
+    border-bottom: white 1px solid;
+}
+
+.account h2
+{
+    font-size: 0.7em;
+    padding: 0 2em 0.3em 2em;
+}
+
+.basket
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket img
+{
+    min-width: 30px;
+    width: 22%;
+    height: auto;
+}
+
+.basket span
+{
+    font-size: 0.7em;
+    margin: 0 0.5em;
+}
+
+/************************** NAV *****************************/
+
+.nav_header
+{
+    font-size: 0.8em;
+    background-color: rgb(63, 200, 250);
+    margin-top: 0.6em;
+    white-space: nowrap;
+    position: relative;
+}
+
+.nav_header input[type="checkbox"], .nav_header label
+{
+    display: none;
+}
+
+.nav_header input[type="checkbox"], .nav_header img
+{
+    width: 25px;
+    height: 22px;
+    margin: 0.4em 0.8em;
+    cursor: pointer;
+}
+
+.nav_header input[type="checkbox"]
+{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.nav_header_links
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(63, 200, 250);
+}
+
+.nav_header_links a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0.6em 2.5em;
+    text-align: center;
+}
+
+.nav_header_links a:hover
+{
+    background-color: rgb(245, 131, 227);
+}
+
+/************************** MAIN *****************************/
+
+.banner_img img
+{
+    width: 100%;
+    height: auto;
+}
+
+/*************** SECTION paiement_who_services ****************/
+
+.paiement_who_services
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.6em 0.8em;
+}
+
+.paiement_who_services h3
+{
+    color: rgb(63, 200, 250);
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+    white-space: nowrap;
+}
+
+.paiement img
+{
+    width: 95%;
+    max-width: fit-content;
+    height: auto;
+    margin-top: 0.6em;
+}
+
+.paiement, .services
+{
+    width: 21%;
+}
+
+.who
+{
+    width: 58%;
+    border-left: grey solid 1px;
+    border-right: grey solid 1px;
+    margin: 0 0.8em;
+    padding: 0 0.8em;
+}
+
+.paiement p, .who p, .services p
+{
+    width: 100%;
+    font-size: 0.7em;
+}
+
+.services img
+{
+    width: 25%;
+    max-width: fit-content;
+    height: auto;
+    margin-right: 0.8em;
+}
+
+.livraison, .echange
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.echange
+{
+    margin-top: 0.6em;
+}
+
+/*************************** SECTION articles ***************************/
+
+.articles
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.2em auto;
+}
+
+.articles article
+{
+    width: 30%;
+    font-size: 0.7em;
+    border: grey solid 1px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0.1em 0.1em 0.4em;
+}
+
+.articles h4
+{
+    background-color: rgb(200, 200, 200);
+    border-radius: 15px 15px 0 0;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.6em;
+}
+
+.articles .bloc_product
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.6em;
+}
+
+.articles img
+{
+    width: 150%;
+    max-width: fit-content;
+    height: fit-content;
+    max-height: 90px;
+    margin-right: 1.2em;
+}
+
+.articles a
+{
+    color: rgb(63, 200, 250);
+    text-decoration: none;
+    text-decoration-line: underline;
+    font-weight: bold;
+    float: right;
+    margin: 0.2em 1.2em 0 0;
+}
+
+.articles a:hover
+{
+    color: rgb(245, 131, 227);
+}
+
+/****************************** FOOTER *****************************/
+
+footer
+{
+    background-color: rgb(63, 200, 250);
+}
+
+.nav_footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.6em;
+}
+
+.nav_footer a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0.8em 0;
+}
+
+/************************ RESPONSIVE ***************************/
+
+@media screen and (min-width: 1200px) {
+    .container
+    {
+        max-width: 1400px;
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /************************** HEADER ************************/
+
+    .title h1 
+    {
+        font-size: 1.8em;
+    }
+
+    .title p, .header_help_tel p
+    {
+        font-size: 0.55em;
+    }
+
+    .basket span 
+    {
+        display: none;
+    }
+
+    /*************************** NAV ***************************/
+
+    .nav_header label
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .nav_header input[type="checkbox"]
+    {
+        display: inline-block;
+    }
+
+    .nav_header_links
+    {
+        display: none;
+    }
+
+    .nav_header input:checked + label + .nav_header_links
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        animation-name: open_nav;
+        animation-duration: 0.4s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes open_nav 
+    {
+        0% {
+          transform: translateX(-300%);
+          opacity: 0;
+        }
+        90% {
+          transform: translateX(30px);
+        }
+        100% {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+    }
+
+    .nav_header a
+    {
+        width: 100%;
+        text-align: left;
+        padding-left: calc(30px + 1.6em);
+        padding-right: calc(30px + 1.6em);
+    }
+
+    /*************************** FOOTER ***************************/
+    
+    .nav_footer
+    {
+        display: block;
+        column-count: 3;
+    }
+    
+    .nav_footer a
+    {
+        padding: 0.4em 0;
+    }
+
+    .nav_footer span
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /************************* HEADER **************************/
+
+    .header_logo_title
+    {
+        max-width: 60%;
+    }
+
+    .title h1 
+    {
+        font-size: 1.5em;
+        margin-left: 0;
+    }
+
+    .title p
+    {
+        font-size: 0.52em;
+        margin-left: 1em;
+    }
+    
+    .header_help_tel
+    {
+        display: none;
+    }
+    
+    .header_account_basket
+    {
+        width: 100%;
+        max-width: 32%;
+    }
+
+    .account h2
+    {
+        padding: 0 1.5em 0.3em 1.5em;
+    }
+
+    /*************** SECTION paiement_who_services ****************/
+
+    .paiement_who_services
+    {
+        display: block;
+    }
+
+    .who 
+    {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    
+    .paiement, .who, .services
+    {
+        width: 100%;
+        margin-bottom: 1.2em;
+    }
+
+    .paiement img, .services img {
+        max-width: fit-content;
+    }
+
+    /*************************** SECTION articles *************************/
+
+    .articles
+    {
+        display: block;
+    }
+
+    .articles article
+    {
+        width: fit-content;
+        margin: 1.2em 0.8em;
+    }
+
+    .articles img
+    {
+        width: 120%;
+    }
+
+    /*************************** FOOTER ***************************/
+    
+    .nav_footer
+    {
+        column-count: 2;
+    }
+}
